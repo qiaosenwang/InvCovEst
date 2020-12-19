@@ -16,7 +16,7 @@ class net(nn.Module):
     def __init__(self, dim, diag, beta):
         super(net, self).__init__()
         v = torch.normal(torch.zeros(dim), 0.1)
-        self.X = torch.matmul(v.t(), v) + diag * torch.eye(dim,dtype=torch.float32)
+        self.X = torch.matmul(v.t(), v) + diag * torch.eye(dim, dtype=torch.float32)
         self.X.requires_grad = True
         self.beta = beta
 
@@ -39,14 +39,14 @@ def sample_cov(sample_size, distribution):
 
 def main():
 
-    mean = torch.tensor([1,2, 3], dtype=torch.float32)
-    cov = torch.tensor([[2, 0, 1],[0, 1, 0],[1, 0, 4]], dtype=torch.float32)
+    mean = torch.tensor([1, 2, 3], dtype=torch.float32)
+    cov = torch.tensor([[2, 0, 1], [0, 1, 0], [1, 0, 4]], dtype=torch.float32)
     truth = torch.inverse(cov)
     x = torch.distributions.multivariate_normal.MultivariateNormal(mean, cov)
     #print(x.sample())
-    n = 10000
+    n = 5000
     d = list(x.sample().size())[0]
-    eps =0.0001
+    eps = 1e-5
 
 
     S = sample_cov(n, x)
@@ -57,7 +57,7 @@ def main():
     NLogL = net(dim=d, diag=0.5, beta=0.05)
 
     param_groups = []
-    param_groups.append({'params':[NLogL.X], 'dimension':d})
+    param_groups.append({'params': [NLogL.X]})
     optimizer = GD(params=param_groups, lr=0.1, weight_decay=0)
     scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, milestones=[500, 1000, 1500], gamma=0.1)
 
