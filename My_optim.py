@@ -3,7 +3,7 @@ from torch.optim.optimizer import Optimizer
 
 
 
-class SGD(Optimizer):
+class GD(Optimizer):
 
 
     def __init__(self, params, lr, weight_decay):
@@ -12,10 +12,9 @@ class SGD(Optimizer):
 
 
         defaults = dict(lr=lr, weight_decay=weight_decay)
-        super(SGD, self).__init__(params, defaults)
-        self.lr = lr
+        super(GD, self).__init__(params, defaults)
         self.params = params
-        self.weight_decay = weight_decay
+
 
     @torch.no_grad()
     def step(self, closure=None):
@@ -25,7 +24,7 @@ class SGD(Optimizer):
         if closure is not None:
             with torch.enable_grad():
                 loss = closure()
-        for group in self.params:
+        for group in self.param_groups:
             for p in group['params']:
                 if p.grad is None:
                     continue
