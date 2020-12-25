@@ -9,8 +9,6 @@ class GD(Optimizer):
     def __init__(self, params, lr, weight_decay):
 
 
-
-
         defaults = dict(lr=lr, weight_decay=weight_decay)
         super(GD, self).__init__(params, defaults)
         self.params = params
@@ -33,13 +31,9 @@ class GD(Optimizer):
 
                 if group['weight_decay'] != 0:
                     d_p = d_p.add(p, alpha=group['weight_decay'])
-                for i in range(1, group['dim']):
-                    for j in range(0, i):
-                        d_p[j][i] = d_p[i][j]
+                d_p = (d_p + d_p.t()) * 0.5
 
                 p.add_(d_p, alpha=-group['lr'])
-                for i in range(1, group['dim']):
-                    for j in range(0, i):
-                        p[j][i] = p[i][j]
+                p = (p + p.t()) * 0.5
 
         return loss

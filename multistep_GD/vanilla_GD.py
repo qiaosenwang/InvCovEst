@@ -3,6 +3,8 @@ import numpy as np
 import torch.nn as nn
 from My_optim import GD
 import matplotlib.pyplot as plt
+import seaborn as sns
+sns.set()
 
 def L1_penal(x):
     dim = list(x.size())[0]
@@ -39,12 +41,12 @@ def sample_cov(sample_size, distribution):
 
 def main():
 
-    mean = torch.tensor([1, 2, 3], dtype=torch.float32)
-    cov = torch.tensor([[2, 0, 1], [0, 1, 0], [1, 0, 4]], dtype=torch.float32)
+    mean = torch.tensor(np.ones(2), dtype=torch.float32)
+    cov = torch.tensor([[1, 0.1], [0.1, 1]], dtype=torch.float32)
     truth = torch.inverse(cov)
     x = torch.distributions.multivariate_normal.MultivariateNormal(mean, cov)
     #print(x.sample())
-    n = 5000
+    n = 15
     d = list(x.sample().size())[0]
     eps = 1e-5
 
@@ -54,18 +56,18 @@ def main():
     R = torch.inverse(S)
     print(R)
 
-    NLogL = net(dim=d, diag=0.5, beta=0.05)
+    NLogL = net(dim=d, diag=0.5, beta=0.1)
 
     param_groups = []
     param_groups.append({'params': [NLogL.X]})
     optimizer = GD(params=param_groups, lr=0.1, weight_decay=0)
-    scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, milestones=[500, 1000, 1500], gamma=0.1)
+    scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, milestones=[40, 80, 120], gamma=0.1)
 
     performance = dict()
     performance['loss'] = []
     performance['iteration'] = []
 
-    max_iter = 2000
+    max_iter = 200
     for i in range(1, max_iter+1):
         out = NLogL.forward(S)
         optimizer.zero_grad()
@@ -73,7 +75,7 @@ def main():
         optimizer.step()
         scheduler.step()
 
-        if i % 5 == 0:
+        if i % 1 == 0:
             loss = torch.norm(NLogL.X.clone().detach()-truth).item()
             performance['loss'].append(loss)
             performance['iteration'].append(i)
@@ -89,10 +91,14 @@ def main():
     zero = torch.zeros(d, d)
     print("censored={}".format(Y.where(abs(Y) > eps, zero)))
     print("true_precision={}".format(truth))
-    #print("sample_cov={}".format(S))
+    print("sample_cov={}".format(S))
     print("direct_inverse={}".format(R))
 
-    plt.plot(performance['iteration'], performance['loss'])
+    #plt.plot(performance['iteration'], performance['loss'])
+    #plt.show()
+    ax1 = sns.heatmap(Y.numpy(), annot=True, cmap="coolwarm", center=0, vmax=5, vmin=-5)
+    plt.show()
+    ax2 = sns.heatmap(R.numpy(), annot=True, center=0, cmap="coolwarm", vmax=2, vmin=-2)
     plt.show()
 
 if __name__ == '__main__':
