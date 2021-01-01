@@ -47,7 +47,7 @@ class Glasso:
     def fit(self, emp_cov):
 
         max_iter = 50
-        tol = 1e-20
+        tol = 1e-12
         p = emp_cov.shape[0]
 
         indices = np.arange(p)
@@ -81,7 +81,7 @@ class Glasso:
                 W[idx, indices != idx] = np.dot(V, beta).reshape(p - 1)
 
                 #print(prec)
-            print(np.linalg.norm(W - W_former, ord=np.inf))
+            #print(np.linalg.norm(W - W_former, ord=np.inf))
             iteration += 1
             if np.linalg.norm(W - W_former, ord=np.inf) < tol:
                 break

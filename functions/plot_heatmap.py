@@ -22,5 +22,6 @@ def heatmap(prec, level=0):
     ax = sns.heatmap(prec, annot=prec, annot_kws=font_setting, cmap="RdBu_r", vmin=-1.2*max, vmax=1.2*max,
                 square=True, mask=mask)
     ax.set_facecolor('.7')
+    #plt.savefig("./temp.png", dpi=500, bbox_inches='tight')
     plt.show()
 

@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c9e2a79-fdac-45d6-a1dc-6c8f265125e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Glasso/Glasso.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Glasso/Glasso_example.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Glasso/test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/multistep_GD/Gaussian_generator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/InvCovEst.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/InvCovEst.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multistep_GD/My_optim.py" beforeDir="false" afterPath="$PROJECT_DIR$/multistep_GD/My_optim.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/multistep_GD/vanilla_GD.py" beforeDir="false" afterPath="$PROJECT_DIR$/multistep_GD/vanilla_GD.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Glasso/Glasso_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/Glasso/Glasso_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Glasso/My_Glasso.py" beforeDir="false" afterPath="$PROJECT_DIR$/Glasso/My_Glasso.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Glasso/train.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LOCOV/train" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/cross_validation.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/cross_validation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/plot_heatmap.py" beforeDir="false" afterPath="$PROJECT_DIR$/functions/plot_heatmap.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradient_descent/train.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,69 +21,24 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions/plot_heatmap.py">
+        <entry file="file://$PROJECT_DIR$/multistep_GD/Gaussian_generator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="21" column="101" selection-start-line="21" selection-start-column="101" selection-end-line="21" selection-end-column="101" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gradient_descent/gd_method.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+            <state relative-caret-position="589">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
-                <element signature="e#9#27#0" expanded="true" />
+                <element signature="e#22#34#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Glasso/My_Glasso.py">
+        <entry file="file://$PROJECT_DIR$/elementwise_coordinate_descent/train_coordinate_descent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+            <state relative-caret-position="254">
+              <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
               <folding>
-                <element signature="e#23#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Glasso/train.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-              <folding>
-                <element signature="e#33#51#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Glasso/Glasso.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="27" column="64" selection-start-line="18" selection-start-column="4" selection-end-line="27" selection-end-column="64" />
-              <folding>
-                <element signature="e#20#38#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LOCOV/LOCOV.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="105" column="69" selection-start-line="105" selection-start-column="20" selection-end-line="105" selection-end-column="69" />
-              <folding>
-                <element signature="e#0#17#1" />
+                <element signature="e#19#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -111,14 +67,12 @@
         <option value="$USER_HOME$/.conda/envs/pytorch-cpu/Lib/site-packages/scipy/sparse/linalg/eigen/arpack/arpack.py" />
         <option value="$PROJECT_DIR$/Glasso/test.py" />
         <option value="$PROJECT_DIR$/multistep_GD/Gaussian_generator.py" />
-        <option value="$PROJECT_DIR$/Glasso/Glasso_example.py" />
         <option value="$PROJECT_DIR$/multistep_GD/plot_heatmap.py" />
         <option value="$PROJECT_DIR$/multistep_GD/penalty.py" />
         <option value="$PROJECT_DIR$/LOCOV/test.py" />
         <option value="$PROJECT_DIR$/multistep_GD/measurements.py" />
         <option value="$PROJECT_DIR$/multistep_GD/cross_validation.py" />
         <option value="$PROJECT_DIR$/functions/measurements.py" />
-        <option value="$PROJECT_DIR$/functions/cross_validation.py" />
         <option value="$PROJECT_DIR$/LOCOV/train" />
         <option value="$PROJECT_DIR$/Glasso/Glasso.py" />
         <option value="$PROJECT_DIR$/LOCOV/LOCOV.py" />
@@ -127,9 +81,17 @@
         <option value="$PROJECT_DIR$/functions/penalty.py" />
         <option value="$PROJECT_DIR$/gradient_descent/train.py" />
         <option value="$PROJECT_DIR$/gradient_descent/gd_method.py" />
-        <option value="$PROJECT_DIR$/Glasso/train.py" />
         <option value="$PROJECT_DIR$/functions/plot_heatmap.py" />
+        <option value="$PROJECT_DIR$/Glasso/train.py" />
+        <option value="$PROJECT_DIR$/functions/cross_validation.py" />
         <option value="$PROJECT_DIR$/Glasso/My_Glasso.py" />
+        <option value="$PROJECT_DIR$/Glasso/train_My_Glasso.py" />
+        <option value="$PROJECT_DIR$/LOCOV/train_LOCOV.py" />
+        <option value="$PROJECT_DIR$/Glasso/Glasso_example.py" />
+        <option value="$PROJECT_DIR$/pure_coordinate_descent/test.py" />
+        <option value="$PROJECT_DIR$/pure_coordinate_descent/Marjanovic_coordinate_descent.py" />
+        <option value="$PROJECT_DIR$/pure_coordinate_descent/train_coordinate_descent.py" />
+        <option value="$PROJECT_DIR$/elementwise_coordinate_descent/train_coordinate_descent.py" />
       </list>
     </option>
   </component>
@@ -145,12 +107,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="InvCovEst" type="b2602c69:ProjectViewProjectNode" />
               <item name="InvCovEst" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="InvCovEst" type="b2602c69:ProjectViewProjectNode" />
+              <item name="InvCovEst" type="462c0819:PsiDirectoryNode" />
+              <item name="elementwise_coordinate_descent" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="InvCovEst" type="b2602c69:ProjectViewProjectNode" />
@@ -162,21 +130,10 @@
               <item name="InvCovEst" type="462c0819:PsiDirectoryNode" />
               <item name="Glasso" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="InvCovEst" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InvCovEst" type="462c0819:PsiDirectoryNode" />
-              <item name="gradient_descent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="InvCovEst" type="b2602c69:ProjectViewProjectNode" />
-              <item name="InvCovEst" type="462c0819:PsiDirectoryNode" />
-              <item name="LOCOV" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -195,8 +152,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.train (2)">
-    <configuration name="Glasso" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.train_coordinate_descent (1)">
+    <configuration name="Glasso_example" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="InvCovEst" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -208,7 +165,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Glasso/Glasso.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Glasso/Glasso_example.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -217,7 +174,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="InvCovEst" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pure_coordinate_descent" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pure_coordinate_descent/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train_LOCOV" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="InvCovEst" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -229,7 +207,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LOCOV/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LOCOV/train_LOCOV.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -238,7 +216,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="train (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="train_coordinate_descent (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="InvCovEst" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -246,11 +224,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gradient_descent" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/elementwise_coordinate_descent" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gradient_descent/train.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/elementwise_coordinate_descent/train_coordinate_descent.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -259,7 +237,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="train (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="train_coordinate_descent" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="InvCovEst" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -267,32 +245,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Glasso" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/pure_coordinate_descent" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Glasso/train.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="InvCovEst" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/LOCOV" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LOCOV/train" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/pure_coordinate_descent/train_coordinate_descent.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -303,11 +260,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.train (2)" />
-        <item itemvalue="Python.train (1)" />
-        <item itemvalue="Python.Glasso" />
-        <item itemvalue="Python.train" />
-        <item itemvalue="Python.test (1)" />
+        <item itemvalue="Python.train_coordinate_descent (1)" />
+        <item itemvalue="Python.train_coordinate_descent" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.Glasso_example" />
+        <item itemvalue="Python.train_LOCOV" />
       </list>
     </recent_temporary>
   </component>
@@ -414,16 +371,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Glasso/Glasso_example.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="105" column="14" lean-forward="true" selection-start-line="97" selection-start-column="4" selection-end-line="105" selection-end-column="14" />
-          <folding>
-            <element signature="e#95#113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Glasso/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
@@ -461,16 +408,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/multistep_GD/Gaussian_generator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#22#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/multistep_GD/cross_validation.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="641">
@@ -481,36 +418,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions/cross_validation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="38" column="52" lean-forward="true" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="52" />
-          <folding>
-            <element signature="e#31#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradient_descent/gradient_descent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-          <folding>
-            <element signature="e#9#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LOCOV/train">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20">
-          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-          <folding>
-            <element signature="e#27#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/gradient_descent/gradient_descent.py" />
     <entry file="file://$PROJECT_DIR$/multistep_GD/penalty.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -528,13 +436,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions/measurements.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/functions/penalty.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
@@ -542,19 +443,63 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gradient_descent/train.py">
+    <entry file="file://$PROJECT_DIR$/gradient_descent/train.py" />
+    <entry file="file://$PROJECT_DIR$/Glasso/Glasso.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+        <state relative-caret-position="286">
+          <caret line="30" column="40" lean-forward="true" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
           <folding>
-            <element signature="e#27#39#0" expanded="true" />
+            <element signature="e#20#38#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Glasso/train.py" />
+    <entry file="file://$PROJECT_DIR$/LOCOV/train" />
+    <entry file="file://$PROJECT_DIR$/functions/cross_validation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+          <folding>
+            <element signature="e#31#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions/plot_heatmap.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LOCOV/LOCOV.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2128">
+          <caret line="115" column="32" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#17#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LOCOV/train_LOCOV.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions/measurements.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gradient_descent/gd_method.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
+        <state relative-caret-position="443">
           <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
           <folding>
             <element signature="e#9#27#0" expanded="true" />
@@ -562,49 +507,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/LOCOV/LOCOV.py">
+    <entry file="file://$PROJECT_DIR$/Glasso/train_My_Glasso.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="105" column="69" selection-start-line="105" selection-start-column="20" selection-end-line="105" selection-end-column="69" />
-          <folding>
-            <element signature="e#0#17#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Glasso/Glasso.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="27" column="64" selection-start-line="18" selection-start-column="4" selection-end-line="27" selection-end-column="64" />
-          <folding>
-            <element signature="e#20#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Glasso/train.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        <state relative-caret-position="-25">
+          <caret line="29" column="10" lean-forward="true" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
           <folding>
             <element signature="e#33#51#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions/plot_heatmap.py">
+    <entry file="file://$PROJECT_DIR$/pure_coordinate_descent/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="21" column="101" selection-start-line="21" selection-start-column="101" selection-end-line="21" selection-end-column="101" />
+        <state relative-caret-position="304">
+          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pure_coordinate_descent/Marjanovic_coordinate_descent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1691">
+          <caret line="89" column="57" selection-start-line="89" selection-start-column="57" selection-end-line="89" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pure_coordinate_descent/train_coordinate_descent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+          <folding>
+            <element signature="e#19#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Glasso/My_Glasso.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="49" column="19" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
+        <state relative-caret-position="666">
+          <caret line="87" column="8" selection-start-line="87" selection-start-column="8" selection-end-line="87" selection-end-column="8" />
           <folding>
             <element signature="e#23#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Glasso/Glasso_example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="91" column="40" selection-start-line="91" selection-start-column="40" selection-end-line="91" selection-end-column="40" />
+          <folding>
+            <element signature="e#95#113#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multistep_GD/Gaussian_generator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="589">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#22#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elementwise_coordinate_descent/train_coordinate_descent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding>
+            <element signature="e#19#37#0" expanded="true" />
           </folding>
         </state>
       </provider>

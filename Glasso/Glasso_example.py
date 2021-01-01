@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import torch
 import sys
 sys.path.append("..")
-from Gaussian_generator import Gaussian_Distribution
+from multistep_GD.Gaussian_generator import Gaussian_Distribution
 
 
 def main():
@@ -52,7 +52,7 @@ def main():
     emp_cov = np.dot(X.T, X) / n_samples
 
     model = GraphicalLassoCV()
-    model.fit(X)
+    model.fit(sample)
     cov_ = model.covariance_
     prec_ = model.precision_
 

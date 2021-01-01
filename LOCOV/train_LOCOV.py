@@ -5,8 +5,8 @@ import torch
 import numpy as np
 import matplotlib.pyplot as plt
 from multistep_GD.Gaussian_generator import Gaussian_Distribution
-from LOCOV.LOCOV import LOCOV
-from multistep_GD.plot_heatmap import heatmap
+from LOCOV import LOCOV
+from plot_heatmap import heatmap
 from cross_validation import cross_val_score_LOCOV
 
 def main():
