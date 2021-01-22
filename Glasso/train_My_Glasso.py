@@ -27,7 +27,7 @@ def main():
 
     heatmap(model.prec)
     #heatmap(np.linalg.inv(model.prec))
-    return
+    #return
 
     score = dict()
     score['log_lik'] = []

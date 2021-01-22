@@ -19,7 +19,7 @@ def main():
 
     population = Gaussian_Distribution(mean=mean, diag=diag, sub=0.25, type='chain', slash=1)
     truth = population.invcov.numpy()
-    n = 5000
+    n = 1000
     d = population.dim
 
     print(truth)
