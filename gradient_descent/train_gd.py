@@ -6,8 +6,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 from multistep_GD.Gaussian_generator import Gaussian_Distribution
 from gradient_descent.gd_method import GD
-
+from measurements import *
 from plot_heatmap import heatmap
+import pandas as pd
+
 
 
 def main():
@@ -19,10 +21,17 @@ def main():
     n = 1000
     d = population.dim
 
-    dist, sample, _, emp_cov = population.generate(n, numpy_like=True)
-    model = GD(lr=0.01, alpha=0.01)
-    model.fit(emp_cov)
+    data = pd.read_csv("samples.csv")
+    sample = data.iloc[1:, 1:].values
+
+    emp_cov = sample_cov(sample)
+
+    #dist, sample, _, emp_cov = population.generate(n, numpy_like=True)
+    model = GD()
+    model.fit(emp_cov, alpha=0.05, lr=0.01)
+    heatmap(emp_cov)
     heatmap(model.prec)
+
 
 
 if __name__ == '__main__':

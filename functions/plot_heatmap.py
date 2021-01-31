@@ -19,9 +19,9 @@ def heatmap(prec, level=0):
     for i in range(0, d):
         anc[i, i] = 0
     max = np.max([np.max(np.abs(anc)), 1e-1])
-    ax = sns.heatmap(prec, annot=prec, annot_kws=font_setting, cmap="RdBu_r", vmin=-1.2*max, vmax=1.2*max,
+    ax = sns.heatmap(prec, annot=prec, annot_kws=font_setting, cmap="RdBu_r", vmin=-0.3, vmax=0.3,
                 square=True, mask=mask)
     ax.set_facecolor('.7')
-    #plt.savefig("./temp.png", dpi=500, bbox_inches='tight')
+    plt.savefig("./temp.png", dpi=600, bbox_inches='tight')
     plt.show()
 

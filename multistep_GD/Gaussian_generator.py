@@ -6,7 +6,7 @@ import numpy as np
 
 class Gaussian_Distribution:
 
-    def __init__(self, type, mean, diag, sub=0, slash=1, cross=0):
+    def __init__(self, type, mean, diag, sub=0, slash=1, cross=0, prec=None):
         self.type = type
         self.mean = mean
         self.dim = list(mean.size())[0]
@@ -25,6 +25,10 @@ class Gaussian_Distribution:
             for i in range(0, self.dim):
                 if i != cross:
                     self.invcov[i][cross] = self.invcov[cross][i] = self.sub
+        elif self.type == 'DIY':
+            self.invcov = prec
+            self.dim = list(prec.size())[0]
+            self.mean = torch.zeros(self.dim, dtype=torch.float32)
         self.invcov = torch.FloatTensor(self.invcov)
         self.cov = torch.inverse(self.invcov)
 

@@ -33,7 +33,7 @@ def main():
     score['log_lik'] = []
     score['AIC'] = []
     score['non_zero'] = []
-    alpha_list = np.hstack((np.arange(0, 0.1, 0.005), np.arange(0.1, 0.3, 0.01)))
+    alpha_list = np.hstack((np.arange(1e-5, 0.1, 0.005), np.arange(0.1, 0.3, 0.01)))
     data = np.array(sample)
     for alpha in alpha_list:
         out_dict = cross_val_score_My_Glasso(data, alpha=alpha)

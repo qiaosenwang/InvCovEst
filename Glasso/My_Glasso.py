@@ -19,8 +19,8 @@ def cd(s, V, alpha):
 
     d = s.shape[0]
     beta = np.ones([d, 1])
-    max_iter = 50
-    tol = 1e-20
+    max_iter = 20
+    tol = 1e-5
 
     iteration = 0
     while iteration < max_iter:
@@ -47,7 +47,7 @@ class Glasso:
     def fit(self, emp_cov):
 
         max_iter = 50
-        tol = 1e-12
+        tol = 1e-5
         p = emp_cov.shape[0]
 
         indices = np.arange(p)
