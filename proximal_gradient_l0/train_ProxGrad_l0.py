@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 from multistep_GD.Gaussian_generator import Gaussian_Distribution
 from functions.plot_heatmap import heatmap
 from functions.measurements import *
-from ProxGrad import *
-from cross_val_ProxGrad import cross_val_score_ProxGrad
+from ProxGrad_l0 import *
+from cross_val_ProxGrad_l0 import cross_val_score_ProxGrad_l0
 from sklearn.covariance import GraphicalLassoCV
 import pandas as pd
 from data_processing import z_score
@@ -26,24 +26,30 @@ def main():
     p = population.dim
 
     print(truth)
-    heatmap(truth)
-
-
+    #heatmap(truth)
 
 
     data = pd.read_csv("chain.csv")
     sample = data.values[1:, 1:]
+    p_sample = sample
+    #p_emp_cov = sample_cov(p_sample)
     sample = z_score(sample)
     emp_cov = sample_cov(sample)
+
+    model = ProxGrad_l0()
+    alpha = 0.05
+    prec = model.fit_FISTA(emp_cov, alpha)
+    heatmap(prec)
+    print('nonzero:', L0_penal(prec))
 
     score = dict()
     score['log_lik'] = []
     score['AIC'] = []
     score['non_zero'] = []
     alpha_list = np.hstack((np.arange(1e-5, 0.1, 0.002), np.arange(0.1, 0.3, 0.01)))
-    data = np.array(sample)
+    #data = np.array(sample)
     for alpha in alpha_list:
-        out_dict = cross_val_score_ProxGrad(data, alpha=alpha, type='FISTA')
+        out_dict = cross_val_score_ProxGrad_l0(sample, alpha=alpha, type='FISTA')
         score['log_lik'].append(out_dict['log_lik'])
         score['AIC'].append(out_dict['AIC'])
         score['non_zero'].append(out_dict['non_zero'])
@@ -54,7 +60,7 @@ def main():
     plt.plot(alpha_list, score['non_zero'])
     plt.show()
 
-    model = ProxGrad()
+    model = ProxGrad_l0()
     l = len(alpha_list)
     alpha = 0
     log_lik = -1e12
@@ -84,6 +90,9 @@ def main():
     model.fit(sample)
     heatmap(model.precision_)
     print('nonzero:', L0_penal(model.precision_))
+
+
+
 
 
 
